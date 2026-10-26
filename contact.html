@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Haven Interiors | Koregaon Park Pune Studio & Consultations</title>
+  <meta name="description" content="Get in touch with Haven Interiors. Schedule an initial consultation for your home or commercial space. Call +91 98765 43216 or visit our design studio in Koregaon Park, Pune.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏛️</text></svg>">
+</head>
+<body>
+
+  <!-- ================= SITE HEADER ================= -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" aria-label="Haven Interiors Home">
+        <span class="logo-main">HAVEN<span class="logo-dot"></span></span>
+        <span class="logo-sub">INTERIORS • STUDIO</span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="testimonials.html" class="nav-link">Testimonials</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </nav>
+
+      <div class="nav-cta-wrap">
+        <a href="tel:+919876543216" class="btn btn-outline nav-cta-btn">
+          Call: +91 98765 43216
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger Toggle -->
+      <button class="mobile-toggle" aria-label="Toggle Navigation Menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Menu Drawer -->
+  <div class="mobile-menu-overlay" aria-hidden="true"></div>
+  <aside class="mobile-menu" aria-label="Mobile Navigation">
+    <div>
+      <div style="margin-bottom: 24px;">
+        <a href="index.html" class="brand-logo">
+          <span class="logo-main">HAVEN<span class="logo-dot"></span></span>
+          <span class="logo-sub">INTERIORS • STUDIO</span>
+        </a>
+      </div>
+      <nav class="mobile-nav-links">
+        <a href="index.html" class="mobile-nav-link">Home <span>→</span></a>
+        <a href="projects.html" class="mobile-nav-link">Projects <span>→</span></a>
+        <a href="services.html" class="mobile-nav-link">Services <span>→</span></a>
+        <a href="about.html" class="mobile-nav-link">About <span>→</span></a>
+        <a href="testimonials.html" class="mobile-nav-link">Testimonials <span>→</span></a>
+        <a href="contact.html" class="mobile-nav-link active">Contact <span>→</span></a>
+      </nav>
+    </div>
+
+    <div class="mobile-menu-footer">
+      <a href="tel:+919876543216" class="btn btn-primary" style="width: 100%;">
+        Call: +91 98765 43216
+      </a>
+      <div class="mobile-menu-info">
+        <p><strong>Studio:</strong> 45 Design Hub, Koregaon Park, Pune</p>
+        <p><strong>Email:</strong> hello@haveninteriors.in</p>
+      </div>
+    </div>
+  </aside>
+
+  <main>
+    <!-- ================= CONTACT HERO ================= -->
+    <section class="contact-hero">
+      <div class="container">
+        <span class="section-label">Connect With Our Studio</span>
+        <h1 class="section-title">Begin Your Interior Journey</h1>
+        <p class="section-subtitle centered">
+          Whether you are planning a complete turnkey residence or wish to transform a specific room, we look forward to hearing your vision.
+        </p>
+      </div>
+    </section>
+
+    <!-- ================= MAIN CONTACT SECTION ================= -->
+    <section class="section-padding bg-white" style="padding-top: 50px;">
+      <div class="container">
+        <div class="contact-layout-grid">
+
+          <!-- Left Column: Working Inquiry Form -->
+          <div>
+            <div class="contact-form-card">
+              <div style="margin-bottom: 28px;">
+                <span class="section-label">Detailed Project Inquiry</span>
+                <h2 style="font-size: 1.875rem; margin-bottom: 8px;">Tell Us About Your Space</h2>
+                <p style="color: var(--color-text-secondary); font-size: 0.9375rem;">
+                  Fill in your project requirements below. Our design directors review all inquiries and respond within 24 hours.
+                </p>
+              </div>
+
+              <!-- Contact Form -->
+              <form id="contactInquiryForm" novalidate>
+                <div class="form-grid">
+                  <!-- Full Name (Required) -->
+                  <div class="form-group">
+                    <label for="fullName" class="form-label">Full Name <span class="required-dot">*</span></label>
+                    <input type="text" id="fullName" class="form-control" placeholder="e.g. Ananya Roy" required>
+                    <span class="error-message"></span>
+                  </div>
+
+                  <!-- Phone Number (Required) -->
+                  <div class="form-group">
+                    <label for="phoneNumber" class="form-label">Phone Number <span class="required-dot">*</span></label>
+                    <input type="tel" id="phoneNumber" class="form-control" placeholder="+91 98765 43216" required>
+                    <span class="error-message"></span>
+                  </div>
+                </div>
+
+                <div class="form-grid">
+                  <!-- Email (Required) -->
+                  <div class="form-group">
+                    <label for="emailAddress" class="form-label">Email Address <span class="required-dot">*</span></label>
+                    <input type="email" id="emailAddress" class="form-control" placeholder="ananya@example.com" required>
+                    <span class="error-message"></span>
+                  </div>
+
+                  <!-- Project Type (Dropdown Required) -->
+                  <div class="form-group">
+                    <label for="projectType" class="form-label">Project Type <span class="required-dot">*</span></label>
+                    <select id="projectType" class="form-control" required>
+                      <option value="" disabled selected>Select a Project Type</option>
+                      <option value="Full Home Interior Design">Full Home Interior Design</option>
+                      <option value="Kitchen Design">Kitchen Design</option>
+                      <option value="Living & Bedroom Design">Living & Bedroom Design</option>
+                      <option value="Office & Commercial Spaces">Office & Commercial Spaces</option>
+                      <option value="Space Planning & Consultation">Space Planning & Consultation</option>
+                      <option value="Custom Furniture & Décor">Custom Furniture & Décor</option>
+                    </select>
+                    <span class="error-message"></span>
+                  </div>
+                </div>
+
+                <div class="form-grid">
+                  <!-- Budget Range (Optional Dropdown) -->
+                  <div class="form-group">
+                    <label for="budgetRange" class="form-label">Budget Range (Optional)</label>
+                    <select id="budgetRange" class="form-control">
+                      <option value="Not Specified">Select Approximate Budget</option>
+                      <option value="₹15 Lakhs - ₹25 Lakhs">₹15 Lakhs - ₹25 Lakhs</option>
+                      <option value="₹25 Lakhs - ₹50 Lakhs">₹25 Lakhs - ₹50 Lakhs</option>
+                      <option value="₹50 Lakhs - ₹1 Crore">₹50 Lakhs - ₹1 Crore</option>
+                      <option value="₹1 Crore +">₹1 Crore + (Ultra-Luxury)</option>
+                    </select>
+                  </div>
+
+                  <!-- Property Location / Size -->
+                  <div class="form-group">
+                    <label for="propertyDetails" class="form-label">Property Location & Size</label>
+                    <input type="text" id="propertyDetails" class="form-control" placeholder="e.g. 4BHK Penthouse, Koregaon Park">
+                  </div>
+                </div>
+
+                <!-- Message / Requirements -->
+                <div class="form-group">
+                  <label for="projectMessage" class="form-label">Message / Requirements</label>
+                  <textarea id="projectMessage" class="form-control" placeholder="Tell us about your possession date, design aesthetic (e.g. warm minimalism, contemporary classic), and any specific needs..."></textarea>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" id="contactSubmitBtn" class="btn btn-primary" style="width: 100%; padding: 16px;">
+                  Submit Design Inquiry
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                  </svg>
+                </button>
+              </form>
+
+              <!-- SUCCESS MESSAGE BOX -->
+              <div class="form-success-box" id="contactSuccessBox">
+                <div class="success-icon">
+                  <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <polyline points="20 6 9 17 4 12"/>
+                  </svg>
+                </div>
+                <h3>Thank you for your inquiry!</h3>
+                <p>We will get back to you within 24 hours.</p>
+
+                <div class="inquiry-ref-badge">
+                  Inquiry Reference: <span id="inquiryRefNumber">#HVN-84920</span>
+                </div>
+
+                <div id="inquirySummaryDetails"></div>
+
+                <div style="margin-top: 24px; display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
+                  <a href="#" id="whatsappFollowUpBtn" class="btn btn-gold" target="_blank" rel="noopener">
+                    Send Reference on WhatsApp
+                  </a>
+                  <button type="button" class="btn btn-outline" onclick="location.reload();">
+                    Submit Another Inquiry
+                  </button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Right Column: Studio Contact Info & Embedded Map -->
+          <div class="contact-sidebar">
+
+            <!-- Studio Details Card -->
+            <div class="contact-info-card">
+              <span class="section-label">Pune Flagship Studio</span>
+              <h3 style="font-size: 1.5rem; margin-bottom: 24px;">Haven Interiors</h3>
+
+              <!-- Address -->
+              <div class="info-item">
+                <div class="info-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 21s-8-7.5-8-12a8 8 0 0 1 16 0c0 4.5-8 12-8 12z"/>
+                    <circle cx="12" cy="9" r="3"/>
+                  </svg>
+                </div>
+                <div class="info-details">
+                  <h4>Studio Address</h4>
+                  <p>Haven Interiors, 45 Design Hub, Koregaon Park, Pune – 411001</p>
+                </div>
+              </div>
+
+              <!-- Phone -->
+              <div class="info-item">
+                <div class="info-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                  </svg>
+                </div>
+                <div class="info-details">
+                  <h4>Telephone & Direct</h4>
+                  <p><a href="tel:+919876543216">+91 98765 43216</a></p>
+                </div>
+              </div>
+
+              <!-- Email -->
+              <div class="info-item">
+                <div class="info-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                    <polyline points="22,6 12,13 2,6"/>
+                  </svg>
+                </div>
+                <div class="info-details">
+                  <h4>Email Inquiries</h4>
+                  <p><a href="mailto:hello@haveninteriors.in">hello@haveninteriors.in</a></p>
+                </div>
+              </div>
+
+              <!-- Hours -->
+              <div class="info-item">
+                <div class="info-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <polyline points="12 6 12 12 16 14"/>
+                  </svg>
+                </div>
+                <div class="info-details">
+                  <h4>Studio Hours</h4>
+                  <p>Monday – Saturday: 10:00 AM – 7:00 PM<br>Sunday: By Prior Appointment</p>
+                </div>
+              </div>
+
+              <!-- Quick Action Buttons -->
+              <div class="quick-action-buttons">
+                <a 
+                  href="https://wa.me/919876543216?text=Hello%20Haven%20Interiors%2C%20I%20am%20interested%20in%20discussing%20an%20interior%20design%20project." 
+                  class="quick-action-btn btn-whatsapp-action"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                  </svg>
+                  WhatsApp
+                </a>
+                <a href="tel:+919876543216" class="quick-action-btn btn-call-action">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                  </svg>
+                  Call Studio
+                </a>
+              </div>
+            </div>
+
+            <!-- Embedded Google Maps -->
+            <div class="map-embed-wrapper">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15132.883909772594!2d73.88788915541992!3d18.536768399999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c0f64c67784d%3A0xc6c764fa6f228b3f!2sKoregaon%20Park%2C%20Pune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
+                title="Haven Interiors Studio Location - Koregaon Park Pune" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= SITE FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo">
+            <span class="logo-main">HAVEN<span class="logo-dot"></span></span>
+            <span class="logo-sub">INTERIORS • STUDIO</span>
+          </a>
+          <p class="footer-tagline">
+            Designing spaces that feel like home. Bespoke residential architecture and turnkey interior environments crafted with timeless warmth and precision.
+          </p>
+          <div class="footer-social-row">
+            <a href="https://instagram.com" class="social-icon-link" aria-label="Instagram" target="_blank" rel="noopener">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+              </svg>
+            </a>
+            <a href="https://pinterest.com" class="social-icon-link" aria-label="Pinterest" target="_blank" rel="noopener">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="12" y1="4" x2="12" y2="20"/>
+                <path d="M8 8a6 6 0 1 1 8 0c0 4-3 6-5 6"/>
+              </svg>
+            </a>
+            <a href="https://linkedin.com" class="social-icon-link" aria-label="LinkedIn" target="_blank" rel="noopener">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                <rect x="2" y="9" width="4" height="12"/>
+                <circle cx="4" cy="4" r="2"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="projects.html" class="footer-link">Projects Portfolio</a></li>
+            <li><a href="services.html" class="footer-link">Design Services</a></li>
+            <li><a href="about.html" class="footer-link">About Studio</a></li>
+            <li><a href="testimonials.html" class="footer-link">Client Reviews</a></li>
+            <li><a href="contact.html" class="footer-link">Contact & Inquiries</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Consultations</h4>
+          <ul class="footer-links">
+            <li><a href="contact.html" class="footer-link">Penthouse Audits</a></li>
+            <li><a href="contact.html" class="footer-link">Villa Turnkey Estimates</a></li>
+            <li><a href="contact.html" class="footer-link">Studio Appointments</a></li>
+            <li><a href="contact.html" class="footer-link">Virtual Video Briefs</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Studio Location</h4>
+          <div class="footer-contact-info">
+            <p><strong>Address:</strong><br>Haven Interiors, 45 Design Hub, Koregaon Park, Pune – 411001</p>
+            <p><strong>Direct Phone:</strong><br><a href="tel:+919876543216">+91 98765 43216</a></p>
+            <p><strong>Email Inquiry:</strong><br><a href="mailto:hello@haveninteriors.in">hello@haveninteriors.in</a></p>
+            <p><strong>Hours:</strong> Mon – Sat: 10:00 AM – 7:00 PM</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Haven Interiors Private Limited. All Rights Reserved.</p>
+        <p>Flagship studio at 45 Design Hub, Koregaon Park, Pune.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= FLOATING WHATSAPP BUTTON ================= -->
+  <a 
+    href="https://wa.me/919876543216?text=Hello%20Haven%20Interiors%2C%20I%20am%20interested%20in%20discussing%20an%20interior%20design%20project." 
+    class="floating-whatsapp" 
+    target="_blank" 
+    rel="noopener noreferrer" 
+    aria-label="Chat with Haven Interiors on WhatsApp"
+  >
+    <div class="whatsapp-pulse"></div>
+    <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+    <span class="floating-whatsapp-tooltip">Chat with Principal Designer</span>
+  </a>
+
+  <!-- ================= BACK TO TOP BUTTON ================= -->
+  <button class="back-to-top" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M18 15l-6-6-6 6"/>
+    </svg>
+  </button>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+</html>

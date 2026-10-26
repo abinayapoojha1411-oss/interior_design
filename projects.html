@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curated Portfolio | Haven Interiors | Architectural & Interior Design</title>
+  <meta name="description" content="Explore the portfolio of Haven Interiors. A curated collection of luxury residential interiors, modular kitchens, serene bedroom suites, spa bathrooms, and boutique executive offices in Pune and Mumbai.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏛️</text></svg>">
+</head>
+<body>
+
+  <!-- ================= SITE HEADER ================= -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" aria-label="Haven Interiors Home">
+        <span class="logo-main">HAVEN<span class="logo-dot"></span></span>
+        <span class="logo-sub">INTERIORS • STUDIO</span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="projects.html" class="nav-link active">Projects</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="testimonials.html" class="nav-link">Testimonials</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-cta-wrap">
+        <button type="button" class="btn btn-primary nav-cta-btn" data-open-modal="consultation">
+          Book Consultation
+        </button>
+      </div>
+
+      <!-- Mobile Hamburger Toggle -->
+      <button class="mobile-toggle" aria-label="Toggle Navigation Menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Menu Drawer -->
+  <div class="mobile-menu-overlay" aria-hidden="true"></div>
+  <aside class="mobile-menu" aria-label="Mobile Navigation">
+    <div>
+      <div style="margin-bottom: 24px;">
+        <a href="index.html" class="brand-logo">
+          <span class="logo-main">HAVEN<span class="logo-dot"></span></span>
+          <span class="logo-sub">INTERIORS • STUDIO</span>
+        </a>
+      </div>
+      <nav class="mobile-nav-links">
+        <a href="index.html" class="mobile-nav-link">Home <span>→</span></a>
+        <a href="projects.html" class="mobile-nav-link active">Projects <span>→</span></a>
+        <a href="services.html" class="mobile-nav-link">Services <span>→</span></a>
+        <a href="about.html" class="mobile-nav-link">About <span>→</span></a>
+        <a href="testimonials.html" class="mobile-nav-link">Testimonials <span>→</span></a>
+        <a href="contact.html" class="mobile-nav-link">Contact <span>→</span></a>
+      </nav>
+    </div>
+
+    <div class="mobile-menu-footer">
+      <button type="button" class="btn btn-primary" style="width: 100%;" data-open-modal="consultation">
+        Book Consultation
+      </button>
+      <div class="mobile-menu-info">
+        <p><strong>Studio:</strong> 45 Design Hub, Koregaon Park, Pune</p>
+        <p><strong>Direct:</strong> +91 98765 43216</p>
+      </div>
+    </div>
+  </aside>
+
+  <main>
+    <!-- ================= PORTFOLIO HERO ================= -->
+    <section class="portfolio-hero">
+      <div class="container">
+        <span class="section-label">Curated Commissions</span>
+        <h1 class="section-title">Our Design Portfolio</h1>
+        <p class="section-subtitle centered">
+          Explore our signature living environments, bespoke kitchens, tranquil master suites, and bespoke commercial studies designed across Pune, Mumbai, and beyond.
+        </p>
+      </div>
+    </section>
+
+    <!-- ================= FILTERABLE GALLERY ================= -->
+    <section class="section-padding bg-white" style="padding-top: 40px;">
+      <div class="container">
+
+        <!-- Filter Buttons -->
+        <div class="filter-bar" role="tablist" aria-label="Project Categories">
+          <button type="button" class="filter-btn active" data-filter="all">All (18)</button>
+          <button type="button" class="filter-btn" data-filter="living-room">Living Room</button>
+          <button type="button" class="filter-btn" data-filter="bedroom">Bedroom</button>
+          <button type="button" class="filter-btn" data-filter="kitchen">Kitchen</button>
+          <button type="button" class="filter-btn" data-filter="bathroom">Bathroom</button>
+          <button type="button" class="filter-btn" data-filter="office">Office</button>
+          <button type="button" class="filter-btn" data-filter="full-home">Full Home</button>
+        </div>
+
+        <!-- Gallery Grid (18 Projects) -->
+        <div class="gallery-grid" id="portfolioGallery">
+
+          <!-- Project 1: Full Home -->
+          <div class="gallery-item" 
+               data-category="full-home" 
+               data-category-label="Full Home"
+               data-title="The Oberoi Penthouse" 
+               data-location="Koregaon Park, Pune" 
+               data-specs="4,800 sq.ft • Contemporary Luxury"
+               data-full-img="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=85">
+            <div class="gallery-thumb">
+              <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=85" alt="The Oberoi Penthouse in Koregaon Park Pune" loading="lazy">
+              <div class="gallery-overlay">
+                <div class="gallery-hover-text">
+                  <h4>The Oberoi Penthouse</h4>
+                  <p>Koregaon Park, Pune • Full Home</p>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-info-bar">
+              <div>
+                <h4>The Oberoi Penthouse</h4>
+                <p>Koregaon Park, Pune</p>
+              </div>
+              <span class="gallery-tag-pill">Full Home</span>
+            </div>
+          </div>
+
+          <!-- Project 2: Living Room -->
+          <div class="gallery-item" 
+               data-category="living-room" 
+               data-category-label="Living Room"
+               data-title="Aura Minimalist Living Salon" 
+               data-location="Boat Club Road, Pune" 
+               data-specs="Warm Travertine & Custom Linen"
+               data-full-img="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1600&q=85">
+            <div class="gallery-thumb">
+              <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=800&q=85" alt="Aura Minimalist Living Salon in Boat Club Road" loading="lazy">
+              <div class="gallery-overlay">
+                <div class="gallery-hover-text">
+                  <h4>Aura Minimalist Living Salon</h4>
+                  <p>Boat Club Road, Pune • Living Room</p>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-info-bar">
+              <div>
+                <h4>Aura Minimalist Living Salon</h4>
+                <p>Boat Club Road, Pune</p>
+              </div>
+              <span class="gallery-tag-pill">Living Room</span>
+            </div>
+          </div>
+
+          <!-- Project 3: Kitchen -->
+          <div class="gallery-item" 
+               data-category="kitchen" 
+               data-category-label="Kitchen"
+               data-title="Lumina Calacatta Kitchen" 
+               data-location="Kalyani Nagar, Pune" 
+               data-specs="Concealed Bar & German Hardware"
+               data-full-img="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=1600&q=85">
+            <div class="gallery-thumb">
+              <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=800&q=85" alt="Lumina Calacatta Kitchen in Kalyani Nagar" loading="lazy">
+              <div class="gallery-overlay">
+                <div class="gallery-hover-text">
+                  <h4>Lumina Calacatta Kitchen</h4>
+                  <p>Kalyani Nagar, Pune • Kitchen</p>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-info-bar">
+              <div>
+                <h4>Lumina Calacatta Kitchen</h4>
+                <p>Kalyani Nagar, Pune</p>
+              </div>
+              <span class="gallery-tag-pill">Kitchen</span>
+            </div>
+          </div>
+
+          <!-- Project 4: Bedroom -->
+          <div class="gallery-item" 
+               data-category="bedroom" 
+               data-category-label="Bedroom"
+               data-title="Elysian Master Sanctuary" 
+               data-location="Worli Sea Face, Mumbai" 
+               data-specs="Fluted Oak & Ambient Sconces"
+               data-full-img="https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=1600&q=85">
+            <div class="gallery-thumb">
+              <img src="https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=800&q=85" alt="Elysian Master Sanctuary in Worli Mumbai" loading="lazy">
+              <div class="gallery-overlay">
+                <div class="gallery-hover-text">
+                  <h4>Elysian Master Sanctuary</h4>
+                  <p>Worli Sea Face, Mumbai • Bedroom</p>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-info-bar">
+              <div>
+                <h4>Elysian Master Sanctuary</h4>
+                <p>Worli Sea Face, Mumbai</p>
+              </div>
+              <span class="gallery-tag-pill">Bedroom</span>
+            </div>
+          </div>
+
+          <!-- Project 5: Bathroom -->
+          <div class="gallery-item" 
+               data-category="bathroom" 
+               data-category-label="Bathroom"
+               data-title="Serena Travertine Spa Ensuite" 
+               data-location="Koregaon Park, Pune" 
+               data-specs="Freestanding Stone Tub & Brushed Brass"
+               data-full-img="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1600&q=85">
+            <div class="gallery-thumb">
+              <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=85" alt="Serena Travertine Spa Ensuite in Koregaon Park" loading="lazy">
+              <div class="gallery-overlay">
+                <div class="gallery-hover-text">
+                  <h4>Serena Travertine Spa Ensuite</h4>
+                  <p>Koregaon Park, Pune • Bathroom</p>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-info-bar">
+              <div>
+                <h4>Serena Travertine Spa Ensuite</h4>
+                <p>Koregaon Park, Pune</p>
+              </div>
+              <span class="gallery-tag-pill">Bathroom</span>
+            </div>
+          </div>
+
+          <!-- Project 6: Office -->
+          <div class="gallery-item" 
+               data-category="office" 
+               data-category-label="Office"
+               data-title="The Executive Atelier" 
+               data-location="Bandra Kurla Complex, Mumbai" 
+               data-specs="Acoustic Slats & Walnut Library"
+               data-full-img="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1600&q=85">
+            <div class="gallery-thumb">
+              <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=85" alt="The Executive Atelier in BKC Mumbai" loading="lazy">
+              <div class="gallery-overlay">
+                <div class="gallery-hover-text">
+                  <h4>The Executive Atelier</h4>
+                  <p>BKC, Mumbai • Office</p>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-info-bar">
+              <div>
+                <h4>The Executive Atelier</h4>
+                <p>BKC, Mumbai</p>
+              </div>
+              <span class="gallery-tag-pill">Office</span>
+            </div>
+          </div>
+
+          <!-- Project 7: Living Room -->
+          <div class="gallery-item" 
+               data-category="living-room" 
+               data-category-label="Living Room"
+               data-title="Japandi Warm Hearth Lounge" 
+               data-location="Senapati Bapat Road, Pune" 
+               data-specs="Limewash Walls & Low-Slung Seating"
+               data-full-img="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1600&q=85">
+            <div class="gallery-thumb">
+              <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=85" alt="Japandi Warm Hearth Lounge in Pune" loading="lazy">
+              <div class="gallery-overlay">
+                <div class="gallery-hover-text">
+                  <h4>Japandi Warm Hearth Lounge</h4>
+                  <p>SB Road, Pune • Living Room</p>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-info-bar">
+              <div>
+                <h4>Japandi Warm Hearth Lounge</h4>
+                <p>SB Road, Pune</p>
+              </div>
+              <span class="gallery-tag-pill">Living Room</span>
+            </div>
+          </div>
+
+          <!-- Project 8: Full Home -->
+          <div class="gallery-item" 
+               data-category="full-home" 
+               data-category-label="Full Home"
+               data-title="The Mulberry Courtyard Villa" 
+               data-location="Bandra West, Mumbai" 
+               data-specs="6,500 sq.ft • Indoor-Outdoor Living"
+               data-full-img="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1600&q=85">
+            <div class="gallery-thumb">
+              <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=85" alt="The Mulberry Courtyard Villa in Bandra West" loading="lazy">
+              <div class="gallery-overlay">
+                <div class="gallery-hover-text">
+                  <h4>The Mulberry Courtyard Villa</h4>
+                  <p>Bandra West, Mumbai • Full Home</p>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-info-bar">
+              <div>
+                <h4>The Mulberry Courtyard Villa</h4>
+                <p>Bandra West, Mumbai</p>
+              </div>
+              <span class="gallery-tag-pill">Full Home</span>
+            </div>
+          </div>
+
+          <!-- Project 9: Bedroom -->
+          <div class="gallery-item" 
+               data-category="bedroom" 
+               data-category-label="Bedroom"
+               data-title="Linen & Cane Guest Suite" 
+               data-location="Aundh, Pune" 
+               data-specs="Artisanal Cane Headboard & Boucle Accent"
+               data-full-img="https://images.unsplash.com/photo-1598928506311-c55ded91a20c?auto=format&fit=crop&w=1600&q=85">
+            <div class="gallery-thumb">
+              <img src="https://images.unsplash.com/photo-1598928506311-c55ded91a20c?auto=format&fit=crop&w=800&q=85" alt="Linen and Cane Guest Suite in Aundh" loading="lazy">
+              <div class="gallery-overlay">
+                <div class="gallery-hover-text">
+                  <h4>Linen & Cane Guest Suite</h4>
+                  <p>Aundh, Pune • Bedroom</p>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-info-bar">
+              <div>
+                <h4>Linen & Cane Guest Suite</h4>
+                <p>Aundh, Pune</p>
+              </div>
+              <span class="gallery-tag-pill">Bedroom</span>
+            </div>
+          </div>
+
+          <!-- Project 10: Kitchen -->
+          <div class="gallery-item" 
+               data-category="kitchen" 
+               data-category-label="Kitchen"
+               data-title="Nordic Fluted Island Kitchen" 
+               data-location="Pashan, Pune" 
+               data-specs="Matte Charcoal & European Oak"
+               data-full-img="https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=1600&q=85">
+            <div class="gallery-thumb">
+              <img src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=800&q=85" alt="Nordic Fluted Island Kitchen in Pashan" loading="lazy">
+              <div class="gallery-overlay">
+                <div class="gallery-hover-text">
+                  <h4>Nordic Fluted Island Kitchen</h4>
+                  <p>Pashan, Pune • Kitchen</p>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-info-bar">
+              <div>
+                <h4>Nordic Fluted Island Kitchen</h4>
+                <p>Pashan, Pune</p>
+              </div>
+              <span class="gallery-tag-pill">Kitchen</span>
+            </div>
+          </div>
+
+          <!-- Project 11: Bathroom -->
+          <div class="gallery-item" 
+               data-category="bathroom" 
+               data-category-label="Bathroom"
+               data-title="Aura Monolithic Powder Room" 
+               data-location="Prabhat Road, Pune" 
+               data-specs="Custom Fluted Vanity & Halo Lighting"
+               data-full-img="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=1600&q=85">
+            <div class="gallery-thumb">
+              <img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=800&q=85" alt="Aura Monolithic Powder Room in Prabhat Road" loading="lazy">
+              <div class="gallery-overlay">
+                <div class="gallery-hover-text">
+                  <h4>Aura Monolithic Powder Room</h4>
+                  <p>Prabhat Road, Pune • Bathroom</p>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-info-bar">
+              <div>
+                <h4>Aura Monolithic Powder Room</h4>
+                <p>Prabhat Road, Pune</p>
+              </div>
+              <span class="gallery-tag-pill">Bathroom</span>
+            </div>
+          </div>
+
+          <!-- Project 12: Office -->
+          <div class="gallery-item" 
+               data-category="office" 
+               data-category-label="Office"
+               data-title="The Writer's Studio & Archive" 
+               data-location="Kalyani Nagar, Pune" 
+               data-specs="Floor-to-Ceiling Millwork & Brass Trim"
+               data-full-img="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1600&q=85">
+            <div class="gallery-thumb">
+              <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=800&q=85" alt="The Writer's Studio in Kalyani Nagar" loading="lazy">
+              <div class="gallery-overlay">
+                <div class="gallery-hover-text">
+                  <h4>The Writer's Studio & Archive</h4>
+                  <p>Kalyani Nagar, Pune • Office</p>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-info-bar">
+              <div>
+                <h4>The Writer's Studio & Archive</h4>
+                <p>Kalyani Nagar, Pune</p>
+              </div>
+              <span class="gallery-tag-pill">Office</span>
+            </div>
+          </div>
+
+          <!-- Project 13: Full Home -->
+          <div class="gallery-item" 
+               data-category="full-home" 
+               data-category-label="Full Home"
+               data-title="Solarium Glasshouse Residence" 
+               data-location="Alibaug, Maharashtra" 
+               data-specs="5,200 sq.ft • Natural Stone & Wood"
+               data-full-img="https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=1600&q=85">
+            <div class="gallery-thumb">
+              <img src="https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=800&q=85" alt="Solarium Glasshouse Residence in Alibaug" loading="lazy">
+              <div class="gallery-overlay">
+                <div class="gallery-hover-text">
+                  <h4>Solarium Glasshouse Residence</h4>
+                  <p>Alibaug, Maharashtra • Full Home</p>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-info-bar">
+              <div>
+                <h4>Solarium Glasshouse Residence</h4>
+                <p>Alibaug, Maharashtra</p>
+              </div>
+              <span class="gallery-tag-pill">Full Home</span>
+            </div>
+          </div>
+
+          <!-- Project 14: Living Room -->
+          <div class="gallery-item" 
+               data-category="living-room" 
+               data-category-label="Living Room"
+               data-title="Pavilion Dining & Reception" 
+               data-location="Model Colony, Pune" 
+               data-specs="Curated Brass Chandelier & Oak Parquet"
+               data-full-img="https://images.unsplash.com/photo-1617806118233-18e1de247200?auto=format&fit=crop&w=1600&q=85">
+            <div class="gallery-thumb">
+              <img src="https://images.unsplash.com/photo-1617806118233-18e1de247200?auto=format&fit=crop&w=800&q=85" alt="Pavilion Dining and Reception in Model Colony" loading="lazy">
+              <div class="gallery-overlay">
+                <div class="gallery-hover-text">
+                  <h4>Pavilion Dining & Reception</h4>
+                  <p>Model Colony, Pune • Living Room</p>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-info-bar">
+              <div>
+                <h4>Pavilion Dining & Reception</h4>
+                <p>Model Colony, Pune</p>
+              </div>
+              <span class="gallery-tag-pill">Living Room</span>
+            </div>
+          </div>
+
+          <!-- Project 15: Living Room -->
+          <div class="gallery-item" 
+               data-category="living-room" 
+               data-category-label="Living Room"
+               data-title="The Reading Nook & Library" 
+               data-location="Kothrud, Pune" 
+               data-specs="Sculptural Seating & Fluted Glass Doors"
+               data-full-img="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1600&q=85">
+            <div class="gallery-thumb">
+              <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=800&q=85" alt="The Reading Nook in Kothrud" loading="lazy">
+              <div class="gallery-overlay">
+                <div class="gallery-hover-text">
+                  <h4>The Reading Nook & Library</h4>
+                  <p>Kothrud, Pune • Living Room</p>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-info-bar">
+              <div>
+                <h4>The Reading Nook & Library</h4>
+                <p>Kothrud, Pune</p>
+              </div>
+              <span class="gallery-tag-pill">Living Room</span>
+            </div>
+          </div>
+
+          <!-- Project 16: Bedroom -->
+          <div class="gallery-item" 
+               data-category="bedroom" 
+               data-category-label="Bedroom"
+               data-title="The Cloud Minimalist Suite" 
+               data-location="Juhu, Mumbai" 
+               data-specs="Textured Plaster & Warm Recessed Coves"
+               data-full-img="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1600&q=85">
+            <div class="gallery-thumb">
+              <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=85" alt="The Cloud Minimalist Suite in Juhu" loading="lazy">
+              <div class="gallery-overlay">
+                <div class="gallery-hover-text">
+                  <h4>The Cloud Minimalist Suite</h4>
+                  <p>Juhu, Mumbai • Bedroom</p>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-info-bar">
+              <div>
+                <h4>The Cloud Minimalist Suite</h4>
+                <p>Juhu, Mumbai</p>
+              </div>
+              <span class="gallery-tag-pill">Bedroom</span>
+            </div>
+          </div>
+
+          <!-- Project 17: Kitchen -->
+          <div class="gallery-item" 
+               data-category="kitchen" 
+               data-category-label="Kitchen"
+               data-title="Monochrome Quartz Pantry" 
+               data-location="Viman Nagar, Pune" 
+               data-specs="Integrated Wine Wall & Touchless Storage"
+               data-full-img="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=1600&q=85">
+            <div class="gallery-thumb">
+              <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=800&q=85" alt="Monochrome Quartz Pantry in Viman Nagar" loading="lazy">
+              <div class="gallery-overlay">
+                <div class="gallery-hover-text">
+                  <h4>Monochrome Quartz Pantry</h4>
+                  <p>Viman Nagar, Pune • Kitchen</p>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-info-bar">
+              <div>
+                <h4>Monochrome Quartz Pantry</h4>
+                <p>Viman Nagar, Pune</p>
+              </div>
+              <span class="gallery-tag-pill">Kitchen</span>
+            </div>
+          </div>
+
+          <!-- Project 18: Full Home -->
+          <div class="gallery-item" 
+               data-category="full-home" 
+               data-category-label="Full Home"
+               data-title="The Koregaon Sanctuary" 
+               data-location="Lane 7, Koregaon Park, Pune" 
+               data-specs="3,900 sq.ft • Complete Turnkey Interior"
+               data-full-img="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=85">
+            <div class="gallery-thumb">
+              <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=85" alt="The Koregaon Sanctuary in Lane 7" loading="lazy">
+              <div class="gallery-overlay">
+                <div class="gallery-hover-text">
+                  <h4>The Koregaon Sanctuary</h4>
+                  <p>Koregaon Park, Pune • Full Home</p>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-info-bar">
+              <div>
+                <h4>The Koregaon Sanctuary</h4>
+                <p>Lane 7, Koregaon Park, Pune</p>
+              </div>
+              <span class="gallery-tag-pill">Full Home</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FULLSCREEN WORKING LIGHTBOX MODAL ================= -->
+    <div class="lightbox-modal" id="lightboxModal" role="dialog" aria-modal="true" aria-label="Project Lightbox Gallery">
+      <!-- Close Button -->
+      <button class="lightbox-close" id="lightboxClose" aria-label="Close Lightbox">✕</button>
+
+      <!-- Previous Arrow -->
+      <button class="lightbox-arrow lightbox-prev" id="lightboxPrev" aria-label="Previous Project">‹</button>
+
+      <!-- Next Arrow -->
+      <button class="lightbox-arrow lightbox-next" id="lightboxNext" aria-label="Next Project">›</button>
+
+      <div class="lightbox-wrapper">
+        <div class="lightbox-image-container">
+          <img src="" alt="" id="lightboxImg">
+        </div>
+        <div class="lightbox-caption-bar">
+          <div>
+            <h3 class="lightbox-title" id="lightboxTitle"></h3>
+            <p class="lightbox-meta" id="lightboxMeta"></p>
+          </div>
+          <div class="lightbox-counter" id="lightboxCounter">1 / 18</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================= CTA BANNER ================= -->
+    <section class="cta-banner">
+      <div class="container cta-banner-content">
+        <span class="section-label" style="color: var(--color-gold);">Commission a Haven</span>
+        <h2>Have a Specific Architectural Vision?</h2>
+        <p>
+          From residential layout planning to bespoke joinery, let us craft a customized design proposal for your residence.
+        </p>
+        <div class="cta-buttons-row">
+          <a href="contact.html" class="btn btn-gold">Inquire About Your Project</a>
+          <button type="button" class="btn btn-outline-white" data-open-modal="consultation">Request Studio Callback</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= SITE FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo">
+            <span class="logo-main">HAVEN<span class="logo-dot"></span></span>
+            <span class="logo-sub">INTERIORS • STUDIO</span>
+          </a>
+          <p class="footer-tagline">
+            Designing spaces that feel like home. Bespoke residential architecture and turnkey interior environments crafted with timeless warmth and precision.
+          </p>
+          <div class="footer-social-row">
+            <a href="https://instagram.com" class="social-icon-link" aria-label="Instagram" target="_blank" rel="noopener">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+              </svg>
+            </a>
+            <a href="https://pinterest.com" class="social-icon-link" aria-label="Pinterest" target="_blank" rel="noopener">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="12" y1="4" x2="12" y2="20"/>
+                <path d="M8 8a6 6 0 1 1 8 0c0 4-3 6-5 6"/>
+              </svg>
+            </a>
+            <a href="https://linkedin.com" class="social-icon-link" aria-label="LinkedIn" target="_blank" rel="noopener">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                <rect x="2" y="9" width="4" height="12"/>
+                <circle cx="4" cy="4" r="2"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="projects.html" class="footer-link">Projects Portfolio</a></li>
+            <li><a href="services.html" class="footer-link">Design Services</a></li>
+            <li><a href="about.html" class="footer-link">About Studio</a></li>
+            <li><a href="testimonials.html" class="footer-link">Client Reviews</a></li>
+            <li><a href="contact.html" class="footer-link">Contact & Inquiries</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Project Types</h4>
+          <ul class="footer-links">
+            <li><a href="projects.html" class="footer-link">Living Room Salons</a></li>
+            <li><a href="projects.html" class="footer-link">Luxury Master Suites</a></li>
+            <li><a href="projects.html" class="footer-link">Modular Chef Kitchens</a></li>
+            <li><a href="projects.html" class="footer-link">Travertine Bathrooms</a></li>
+            <li><a href="projects.html" class="footer-link">Executive Home Offices</a></li>
+            <li><a href="projects.html" class="footer-link">Full Home Villas</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Studio Location</h4>
+          <div class="footer-contact-info">
+            <p><strong>Address:</strong><br>Haven Interiors, 45 Design Hub, Koregaon Park, Pune – 411001</p>
+            <p><strong>Direct Phone:</strong><br><a href="tel:+919876543216">+91 98765 43216</a></p>
+            <p><strong>Email Inquiry:</strong><br><a href="mailto:hello@haveninteriors.in">hello@haveninteriors.in</a></p>
+            <p><strong>Hours:</strong> Mon – Sat: 10:00 AM – 7:00 PM</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Haven Interiors Private Limited. All Rights Reserved.</p>
+        <p>Curated residential and commercial spaces across India.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= FLOATING WHATSAPP BUTTON ================= -->
+  <a 
+    href="https://wa.me/919876543216?text=Hello%20Haven%20Interiors%2C%20I%20am%20interested%20in%20discussing%20an%20interior%20design%20project." 
+    class="floating-whatsapp" 
+    target="_blank" 
+    rel="noopener noreferrer" 
+    aria-label="Chat with Haven Interiors on WhatsApp"
+  >
+    <div class="whatsapp-pulse"></div>
+    <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+    <span class="floating-whatsapp-tooltip">Chat with Principal Designer</span>
+  </a>
+
+  <!-- ================= BACK TO TOP BUTTON ================= -->
+  <button class="back-to-top" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M18 15l-6-6-6 6"/>
+    </svg>
+  </button>
+
+  <!-- ================= GLOBAL CONSULTATION MODAL ================= -->
+  <div class="consultation-modal" id="consultationModal" aria-hidden="true" role="dialog">
+    <div class="consultation-modal-dialog">
+      <button class="modal-close-btn" data-close-modal="consultation" aria-label="Close modal">✕</button>
+
+      <div style="margin-bottom: 24px;">
+        <span class="section-label">Complimentary Discovery</span>
+        <h3 style="font-size: 1.75rem; margin-bottom: 8px;">Schedule a Consultation</h3>
+        <p style="color: var(--color-text-secondary); font-size: 0.9375rem;">
+          Connect with our design directors to discuss your floor plan, aesthetic aspirations, and project timeline.
+        </p>
+      </div>
+
+      <form id="modalConsultationForm">
+        <div class="form-group">
+          <label class="form-label">Full Name <span class="required-dot">*</span></label>
+          <input type="text" name="name" class="form-control" placeholder="e.g. Ananya Roy" required>
+        </div>
+
+        <div class="form-grid">
+          <div class="form-group">
+            <label class="form-label">Phone Number <span class="required-dot">*</span></label>
+            <input type="tel" name="phone" class="form-control" placeholder="+91 98765 00000" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Email Address <span class="required-dot">*</span></label>
+            <input type="email" name="email" class="form-control" placeholder="name@email.com" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Project Type</label>
+          <select name="projectType" class="form-control">
+            <option value="Full Home Interior Design">Full Home Interior Design</option>
+            <option value="Kitchen Design">Kitchen Design & Modular Joinery</option>
+            <option value="Living & Bedroom Design">Living & Bedroom Design</option>
+            <option value="Office & Commercial Spaces">Office & Commercial Spaces</option>
+            <option value="Space Planning & Consultation">Space Planning & Consultation</option>
+            <option value="Custom Furniture & Décor">Custom Furniture & Décor</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Property Location & Size</label>
+          <input type="text" name="location" class="form-control" placeholder="e.g. 3BHK Penthouse, Koregaon Park">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Brief Vision / Notes</label>
+          <textarea name="notes" class="form-control" rows="3" placeholder="Tell us about your timeline, design preferences, or budget range..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%;">
+          Submit Consultation Request
+        </button>
+      </form>
+
+      <div class="form-success-box" id="modalSuccessBox" style="display: none;">
+        <div class="success-icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <polyline points="20 6 9 17 4 12"/>
+          </svg>
+        </div>
+        <h3>Request Received</h3>
+        <p>Thank you for your inquiry! We will get back to you within 24 hours.</p>
+        <div class="inquiry-ref-badge">
+          Reference: <span class="inquiry-ref-num">#HVN-7412</span>
+        </div>
+        <div style="margin-top: 24px;">
+          <button type="button" class="btn btn-outline" data-close-modal="consultation">
+            Done
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/projects.js"></script>
+</body>
+</html>
